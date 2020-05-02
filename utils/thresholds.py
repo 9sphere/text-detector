@@ -1,0 +1,10 @@
+min_region_area = 15
+min_aspect_ratio =  0.06
+max_aspect_ratio = 3
+max_eccentricity = 0.995
+min_solidity = 0.3
+min_region_extent = 0.2
+max_region_extent = 0.9
+min_euler_number = -4
+min_stroke_width_metric = 0.4
+expansion_amount = 0.02

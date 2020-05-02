@@ -4,7 +4,7 @@ from skimage.io import imread
 
 from text_detector import detect_text_regions
 
-image_sample = 'sample_images/image6.jpg'
+image_sample = 'sample_images/image7.jpg'
 image = imread(image_sample)
 box_groups = detect_text_regions(image)
 

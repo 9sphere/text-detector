@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="text-detector",
-    version="0.0.1",
+    version="0.0.2",
     author="Muthu krishnan",
     author_email="muthukrishnan749@gmail.com",
     description="Locating texts in images using computer vision",

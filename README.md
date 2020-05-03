@@ -2,11 +2,11 @@
 Locating texts in images using machine vision algorithms
 
 This project aims to use only image processing techniques to locate text regions in the image. More detailed information about the approach is given this link  
-https://muthu.co/?p=1367&preview=true
+https://muthu.co/extracting-text-regions-from-an-image-using-geometric-properties/
 
 ## Installation
 ```
-pip install -r requirements.txt
+pip install text-detector
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ All my experiments are in this notebook also part of the project where I make ch
 [Text Segmentation in Image.ipynb](https://github.com/muthuspark/text-detector/blob/master/notebooks/Text%20Segmentation%20in%20Image.ipynb)
 
 ## Accuracy
-The accuracy depends a lot of the threshold parameters in the `utils.thresholds.py` file which may need tweaking for different kinds of datasets.
+The accuracy depends a lot on the threshold parameters in the `utils.thresholds.py` file which may need tweaking for different kinds of datasets.
 
 ## References
 B. Epshtein, E. Ofek and Y. Wexler, "Detecting text in natural scenes with stroke width transform," 2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, San Francisco, CA, 2010, pp. 2963-2970.

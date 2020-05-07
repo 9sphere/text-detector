@@ -22,5 +22,5 @@ for box in box_groups:
 ax.imshow(image)
 ax.set_axis_off()
 plt.tight_layout()
-plt.savefig('sample_images/outputs/'+image_name)
+plt.savefig('sample_images/outputs/'+image_name, bbox_inches='tight', transparent="True", pad_inches=0)
 plt.show()

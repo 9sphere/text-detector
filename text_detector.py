@@ -42,7 +42,7 @@ def detect_text_regions(img_array, white_text=False):
     label_image = label(binary_img)
     region_props = regionprops(label_image)
 
-    img_height, img_weight = binary_img.shape
+    img_height, img_width = binary_img.shape
 
     # find possible text components
     bounding_boxes = []
@@ -55,8 +55,8 @@ def detect_text_regions(img_array, white_text=False):
 
         aspect_ratio = width / height
 
-        should_clean = region.area < 15
-        should_clean = region.area > (img_height * img_weight / 5)
+        should_clean = region.area < (15 * (img_height * img_width / (600**2)))
+        should_clean = should_clean or region.area > (img_height * img_width / 5)
         should_clean = should_clean or aspect_ratio < min_aspect_ratio or aspect_ratio > max_aspect_ratio
         should_clean = should_clean or region.eccentricity > max_eccentricity
         should_clean = should_clean or region.solidity < min_solidity

@@ -56,7 +56,8 @@ def detect_text_regions(img_array, white_text=False):
         aspect_ratio = width / height
 
         should_clean = region.area < (15 * (img_height * img_width / (600**2)))
-        should_clean = should_clean or region.area > (img_height * img_width / 5)
+        should_clean = should_clean or region.area > (img_height * img$
+        _width / 5)
         should_clean = should_clean or aspect_ratio < min_aspect_ratio or aspect_ratio > max_aspect_ratio
         should_clean = should_clean or region.eccentricity > max_eccentricity
         should_clean = should_clean or region.solidity < min_solidity

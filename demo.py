@@ -19,7 +19,7 @@ for box in box_groups:
                               fill=False, edgecolor='red', linewidth=1)
     ax.add_patch(rect)
 
-ax.imshow(image)
+# ax.imshow(image)
 ax.set_axis_off()
 plt.tight_layout()
 plt.savefig('sample_images/outputs/'+image_name, bbox_inches='tight', transparent="True", pad_inches=0)
